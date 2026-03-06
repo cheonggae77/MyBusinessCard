@@ -9,11 +9,6 @@ namespace MyBusinessCard
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             Random rd = new Random();
@@ -24,11 +19,22 @@ namespace MyBusinessCard
         private void button2_Click(object sender, EventArgs e)
         {
             Process.Start(new ProcessStartInfo("https://github.com/cheonggae77") { UseShellExecute = true });
+            //파일경로가 아닌 브라우저를 열어야 하기때문에 객체 생성후 링크를 넣고 운영체제 쉘을 불러 웹사이트를 열음.
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             pictureBox1.Image = Properties.Resources.일상사진;
+        }
+
+        private void pictureBox1_MouseEnter(object sender, EventArgs e)
+        {
+            pictureBox1.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void Form1_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBox1.BorderStyle = BorderStyle.None;
         }
     }
 }

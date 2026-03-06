@@ -58,7 +58,6 @@
             label2.Size = new Size(455, 61);
             label2.TabIndex = 2;
             label2.Text = "컴퓨터학부 컴퓨터sw";
-            label2.Click += label2_Click;
             // 
             // pictureBox1
             // 
@@ -69,6 +68,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
+            pictureBox1.MouseEnter += pictureBox1_MouseEnter;
             // 
             // label3
             // 
@@ -83,7 +83,7 @@
             // 
             // button1
             // 
-            button1.BackColor = Color.Transparent;
+            button1.BackColor = Color.FromArgb(255, 192, 192);
             button1.FlatAppearance.BorderColor = Color.FromArgb(255, 128, 0);
             button1.FlatAppearance.BorderSize = 2;
             button1.FlatStyle = FlatStyle.Flat;
@@ -114,13 +114,17 @@
             // 
             // button3
             // 
+            button3.BackColor = Color.FromArgb(0, 192, 0);
+            button3.FlatAppearance.BorderColor = Color.FromArgb(0, 64, 0);
+            button3.FlatAppearance.BorderSize = 2;
+            button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("맑은 고딕", 15F);
             button3.Location = new Point(113, 415);
             button3.Name = "button3";
             button3.Size = new Size(156, 58);
             button3.TabIndex = 7;
             button3.Text = "사진 변경";
-            button3.UseVisualStyleBackColor = true;
+            button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
             // Form1
@@ -137,6 +141,7 @@
             Controls.Add(label1);
             Name = "Form1";
             Text = "Form1";
+            MouseLeave += Form1_MouseLeave;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
