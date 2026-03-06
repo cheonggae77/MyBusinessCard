@@ -27,6 +27,7 @@ namespace MyBusinessCard
             pictureBox1.Image = Properties.Resources.일상사진;
         }
 
+        //마우스가 경계를 지나가는걸 트리거로 하여 안밖을 판단해 경계선에 변화를 줌
         private void pictureBox1_MouseEnter(object sender, EventArgs e)
         {
             pictureBox1.BorderStyle = BorderStyle.Fixed3D;
@@ -34,7 +35,7 @@ namespace MyBusinessCard
 
         private void Form1_MouseLeave(object sender, EventArgs e)
         {
-            pictureBox1.BorderStyle = BorderStyle.None;
+            pictureBox1.BorderStyle = BorderStyle.None; 
         }
     }
 }
