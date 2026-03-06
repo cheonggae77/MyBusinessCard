@@ -41,7 +41,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("맑은 고딕", 50F);
-            label1.Location = new Point(381, 60);
+            label1.Location = new Point(364, 60);
             label1.Name = "label1";
             label1.Size = new Size(299, 112);
             label1.TabIndex = 1;
@@ -50,13 +50,14 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("맑은 고딕", 25F);
+            label2.Font = new Font("맑은 고딕", 27F);
             label2.ForeColor = Color.RoyalBlue;
-            label2.Location = new Point(381, 216);
+            label2.Location = new Point(364, 199);
             label2.Name = "label2";
-            label2.Size = new Size(425, 57);
+            label2.Size = new Size(455, 61);
             label2.TabIndex = 2;
             label2.Text = "컴퓨터학부 컴퓨터sw";
+            label2.Click += label2_Click;
             // 
             // pictureBox1
             // 
@@ -71,11 +72,11 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("맑은 고딕", 23F);
+            label3.Font = new Font("맑은 고딕", 27F);
             label3.ForeColor = Color.ForestGreen;
-            label3.Location = new Point(381, 273);
+            label3.Location = new Point(364, 260);
             label3.Name = "label3";
-            label3.Size = new Size(502, 52);
+            label3.Size = new Size(580, 61);
             label3.TabIndex = 4;
             label3.Text = "cheonggae77@suwon.ac.kr";
             // 
@@ -86,12 +87,13 @@
             button1.FlatAppearance.BorderSize = 2;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("맑은 고딕", 15F);
-            button1.Location = new Point(469, 395);
+            button1.Location = new Point(677, 415);
             button1.Name = "button1";
             button1.Size = new Size(251, 58);
             button1.TabIndex = 5;
             button1.Text = "배경색 랜덤 변경";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // Form1
             // 
