@@ -25,5 +25,10 @@ namespace MyBusinessCard
         {
             Process.Start(new ProcessStartInfo("https://github.com/cheonggae77") { UseShellExecute = true });
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Image = Properties.Resources.일상사진;
+        }
     }
 }

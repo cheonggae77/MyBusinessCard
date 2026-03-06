@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             label1 = new Label();
             label2 = new Label();
             pictureBox1 = new PictureBox();
             label3 = new Label();
             button1 = new Button();
             button2 = new Button();
+            button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -62,7 +62,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Image = Properties.Resources.신분증사진;
             pictureBox1.Location = new Point(69, 60);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(245, 315);
@@ -112,11 +112,23 @@
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
+            // button3
+            // 
+            button3.Font = new Font("맑은 고딕", 15F);
+            button3.Location = new Point(113, 415);
+            button3.Name = "button3";
+            button3.Size = new Size(156, 58);
+            button3.TabIndex = 7;
+            button3.Text = "사진 변경";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(972, 503);
+            Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label3);
@@ -137,5 +149,6 @@
         private Label label3;
         private Button button1;
         private Button button2;
+        private Button button3;
     }
 }
